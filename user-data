@@ -1,0 +1,14 @@
+#cloud-config
+hostname: dreamrela
+ssh_pwauth: true
+disable_root: false
+users:
+  - name: root
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    password: 
+chpasswd:
+  list: |
+    root:root
+    root:root
+  expire: false
